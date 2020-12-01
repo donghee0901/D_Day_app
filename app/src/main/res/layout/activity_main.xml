@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainView"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/DateSelectBar"
+        android:layout_height="wrap_content" android:layout_width="match_parent"
+        android:background="#B6B6B6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D-Day_App"
+            android:textSize="40sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:text="+"
+            android:textSize="20sp"
+            android:id="@+id/AddButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|center_vertical"/>
+
+        <Button
+            android:text="X"
+            android:textSize="20sp"
+            android:id="@+id/DeleteButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left|center_vertical"/>
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
